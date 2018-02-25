@@ -1,19 +1,20 @@
-from Inventory import itemPrices
+import Inventory
 userWallet = 10.0
 
 def IsTransactionPossible(inventoryIndex):
     global userWallet
-    if userWallet < itemPrices[inventoryIndex]:
+    if userWallet < Inventory.itemPrices[inventoryIndex]:
         return False
     else:
         return True
 
 def MakeTransaction(inventoryIndex):
     global userWallet
-    userWallet = userWallet - itemPrices[inventoryIndex]
+    userWallet = userWallet - Inventory.itemPrices[inventoryIndex]
     return userWallet
 
 def GetUserWallet():
     return userWallet
 
 print(IsTransactionPossible(1))
+
