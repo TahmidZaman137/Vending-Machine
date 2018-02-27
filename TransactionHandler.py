@@ -1,8 +1,9 @@
 import Inventory
 userWallet = 10.0
 
-def IsTransactionPossible(inventoryIndex):
+def IsTransactionPossible(inventoryIndex, buttonInstance): # Added second parameter to satisfy the conditions of btn1.bind
     global userWallet
+    print("is checking possibility?")
     if userWallet < Inventory.itemPrices[inventoryIndex]:
         return False
     else:
@@ -15,6 +16,4 @@ def MakeTransaction(inventoryIndex):
 
 def GetUserWallet():
     return userWallet
-
-print(IsTransactionPossible(1))
 
