@@ -1,5 +1,3 @@
-# 0.2.X: Display clickable buttons in GUI and assign the transaction handler functions to them
-
 # Kivy imports
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
@@ -13,11 +11,10 @@ import Inventory
 from functools import partial
 
 walletLabel = Label(text = Inventory.as_currency(TransactionHandler.userWallet))
-TransactionHandler.walletlabelReference = walletLabel
+TransactionHandler.walletLabelReference = walletLabel
 
-brokeLabel = Label(text="[color=000000]You broke AF[/color]", markup = True)
-TransactionHandler.brokelabelReference = brokeLabel
-
+brokeLabel = Label(text="", markup = True)
+TransactionHandler.brokeLabelReference = brokeLabel
 
 # BaseGUI definition
 class BaseGUI(GridLayout):
