@@ -1,4 +1,5 @@
 import Inventory
+import AudioManager
 walletLabelReference = None
 brokeLabelReference = None
 
@@ -14,6 +15,7 @@ def IsTransactionPossible(inventoryIndex, buttonInstance): # Added second parame
     global userWallet, brokeLabelReference
     if userWallet >= Inventory.drinks[inventoryIndex].price:
         MakeTransaction(inventoryIndex)
+        AudioManager.successNoise.play()
         brokeLabelReference.text = ""
     else:
         brokeLabelReference.text = "[color=ed1010][size=50]You broke AF[/color][/size]"

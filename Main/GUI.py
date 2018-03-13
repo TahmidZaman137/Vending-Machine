@@ -7,6 +7,8 @@ from kivy.app import runTouchApp
 from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.image import Image
+from kivy.core.audio import SoundLoader
+
 # Vending machine imports
 import TransactionHandler
 import Inventory
@@ -40,6 +42,7 @@ class BaseGUI(GridLayout):
 
         self.add_widget(walletLabel)
         self.add_widget(brokeLabel)
+
 
         # creates vertical scroll bar widget
         root = ScrollView(size_hint=(1, None), size=(Window.width, Window.height))

@@ -19,3 +19,4 @@ def as_currency(amount):
         return '£{:,.2f}'.format(amount)
     else:
         return '-£{:,.2f}'.format(-amount)
+

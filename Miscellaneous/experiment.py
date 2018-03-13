@@ -19,4 +19,20 @@ for i in range(100):
 root = ScrollView(size_hint=(1, None), size=(Window.width, Window.height))
 root.add_widget(layout)
 
-runTouchApp(root)
+#runTouchApp(root)
+
+age = 30
+if age is 21:
+    print("ok")
+elif age is 30:
+    print("alright")
+elif age < 21:
+    print("young")
+else:
+    print("nothing")
+
+L = [1, 2]
+M = L
+
+L == M
+L is not M
