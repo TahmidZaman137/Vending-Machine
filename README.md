@@ -62,6 +62,6 @@
 <h1 id="contacts">Contacts</h1>
 <p>For more information, contact:</p>
 <ul>
-<li>Tahmid Zaman (programmer) - <a href="mailto:tahmid.zaman@hotmail.co.uk">tahmid.zaman@hotmail.co.uk</a></li>
+<li>Tahmid Zaman (Programmer) - <a href="mailto:tahmid.zaman@hotmail.co.uk">tahmid.zaman@hotmail.co.uk</a></li>
 </ul>
 
