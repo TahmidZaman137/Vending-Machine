@@ -1,7 +1,4 @@
----
 
-
----
 
 <h1 id="vending-machine-0.4.x">Vending Machine 0.4.X</h1>
 <p>In this repository you will find the source code of Vending Machine 0.4.X written in Python.</p>
