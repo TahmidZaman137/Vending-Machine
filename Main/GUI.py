@@ -1,3 +1,10 @@
+#===================================================================================
+#
+# This is the main script which makes use of the Kivy module to design and construct
+# the GUI. By running this script, the GUI of the vending machine app is executed.
+#
+#===================================================================================
+
 # Kivy imports
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout

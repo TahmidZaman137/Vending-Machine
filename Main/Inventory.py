@@ -1,3 +1,9 @@
+#===================================================================================
+#
+# This script contains all code pertaining to the items sold by the vending machine.
+#
+#===================================================================================
+
 class Item:
     def __init__(self, name, price):
         pathToImages = r"C:\Users\tahmi\OneDrive\Documents\Git\Vending-Machine\Images\\"

@@ -1,3 +1,9 @@
+#===================================================================================
+#
+# This script contains all code regarding the currency transactions made by the app.
+#
+#===================================================================================
+
 import Inventory
 import AudioManager
 walletLabelReference = None
@@ -19,6 +25,7 @@ def IsTransactionPossible(inventoryIndex, buttonInstance): # Added second parame
         brokeLabelReference.text = ""
     else:
         brokeLabelReference.text = "[color=ed1010][size=50]You broke AF[/color][/size]"
+        AudioManager.failureNoise.play()
 
 
 
