@@ -4,7 +4,7 @@
 ---
 
 <h1 id="vending-machine-0.5.x">Vending Machine 0.5.X</h1>
-<p>In this repository you will find the source code of Vending Machine 0.4.X.</p>
+<p>In this repository you will find the source code of Vending Machine 0.5.X.</p>
 <hr>
 <h2 id="notice">NOTICE</h2>
 <p>This code is written in Python 3.6.4. The module Kivy (version 1.10.0) is required to run this code.</p>
