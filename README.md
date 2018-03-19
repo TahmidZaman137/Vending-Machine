@@ -10,7 +10,7 @@
 <p>This code is written in Python 3.6.4. The module Kivy (version 1.10.0) is required to run this code.</p>
 <hr>
 <h2 id="roadmap">Roadmap</h2>
-<p>Roadmap is subject to change. (last reviewed 15/03/2018).</p>
+<p>Roadmap is subject to change. (last reviewed 19/03/2018).</p>
 
 <table>
 <thead>
