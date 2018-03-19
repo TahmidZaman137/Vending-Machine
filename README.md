@@ -1,5 +1,9 @@
+---
 
-<h1 id="vending-machine-0.4.x">Vending Machine 0.4.X</h1>
+
+---
+
+<h1 id="vending-machine-0.5.x">Vending Machine 0.5.X</h1>
 <p>In this repository you will find the source code of Vending Machine 0.4.X.</p>
 <hr>
 <h2 id="notice">NOTICE</h2>
@@ -16,10 +20,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>0.5</td>
-<td>Sound effects as user feedback.</td>
-</tr>
 <tr>
 <td>0.6</td>
 <td>Product descriptions for all items.</td>
@@ -40,6 +40,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>0.5</td>
+<td>Sound effects as user feedback.</td>
+</tr>
 <tr>
 <td>0.4</td>
 <td>Vertical scroll bar widget.</td>
