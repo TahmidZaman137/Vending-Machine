@@ -1,7 +1,4 @@
----
 
-
----
 
 <h1 id="vending-machine-0.6.x">Vending Machine 0.6.X</h1>
 <p>In this repository you will find the source code of Vending Machine 0.6.X.</p>
