@@ -1,10 +1,14 @@
+---
 
+
+---
 
 <h1 id="vending-machine-0.6.x">Vending Machine 0.6.X</h1>
 <p>In this repository you will find the source code of Vending Machine 0.6.X.</p>
 <hr>
 <h2 id="notice">NOTICE</h2>
 <p>This code is written in Python 3.6.4. The module Kivy (version 1.10.0) is required to run this code.</p>
+<p>This project uses semantic versioning to distinguish between commits. An explanation of this can be found at: <a href="https://semver.org/">https://semver.org/</a></p>
 <hr>
 <h2 id="roadmap">Roadmap</h2>
 <p>Roadmap is subject to change. (last reviewed 21/03/2018).</p>
