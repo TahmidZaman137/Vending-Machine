@@ -3,14 +3,14 @@
 
 ---
 
-<h1 id="vending-machine-0.5.x">Vending Machine 0.5.X</h1>
-<p>In this repository you will find the source code of Vending Machine 0.5.X.</p>
+<h1 id="vending-machine-0.6.x">Vending Machine 0.6.X</h1>
+<p>In this repository you will find the source code of Vending Machine 0.6.X.</p>
 <hr>
 <h2 id="notice">NOTICE</h2>
 <p>This code is written in Python 3.6.4. The module Kivy (version 1.10.0) is required to run this code.</p>
 <hr>
 <h2 id="roadmap">Roadmap</h2>
-<p>Roadmap is subject to change. (last reviewed 19/03/2018).</p>
+<p>Roadmap is subject to change. (last reviewed 21/03/2018).</p>
 
 <table>
 <thead>
@@ -20,10 +20,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>0.6</td>
-<td>Product descriptions for all items.</td>
-</tr>
 <tr>
 <td>0.7</td>
 <td>Visual styling for GUI to better resemble a vending machine.</td>
@@ -40,6 +36,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>0.6</td>
+<td>Product descriptions for all items.</td>
+</tr>
 <tr>
 <td>0.5</td>
 <td>Sound effects as user feedback.</td>
