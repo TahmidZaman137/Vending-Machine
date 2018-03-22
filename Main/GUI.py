@@ -6,6 +6,8 @@
 #===================================================================================
 
 # Kivy imports
+from kivy.config import Config
+Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.scrollview import ScrollView
@@ -56,10 +58,12 @@ class BaseGUI(GridLayout):
         root.add_widget(self)
         runTouchApp(root)
 
+
 class MyApp(App):
 
     def build(self):
         return BaseGUI() # Build according to the BaseGUI.
+
 
 def DisplayGUI():
     if __name__ == '__main__':
