@@ -1,13 +1,12 @@
-#===================================================================================
+# ===================================================================================
 #
 # This is the main script which makes use of the Kivy module to design and construct
 # the GUI. By running this script, the GUI of the vending machine app is executed.
 #
-#===================================================================================
+# ===================================================================================
 
 # Kivy imports
 from kivy.config import Config
-Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.scrollview import ScrollView
@@ -24,22 +23,29 @@ import Inventory
 # Utility imports
 from functools import partial
 
+Config.set('input', 'mouse', 'mouse, multitouch_on_demand')
+
 # BaseGUI definition
+
+
 class BaseGUI(GridLayout):
 
-    def __init__(self, **kwargs): # defines initial properties of the GUI.
-        super(BaseGUI, self).__init__(**kwargs) # this has to be here, trust me...
+    def __init__(self, **kwargs):  # defines initial properties of the GUI.
+        super(BaseGUI, self).__init__(**kwargs)  # this has to be here, trust me...
         self.cols = 5
         self.size_hint_x = 1
         self.size_hint_y = 2
         self.spacing = 20
 
-        for x in range(0, len(Inventory.drinks)): # for loop dynamically creates widgets for the GUI according to inventory data.
+        for x in range(0, len(Inventory.drinks)):
+            # for loop dynamically creates widgets for the GUI according to inventory data.
             self.add_widget(Label(text=Inventory.drinks[x].name))
             self.add_widget(Image(source=Inventory.drinks[x].image))
-            self.add_widget(Label(text=Inventory.as_currency(Inventory.drinks[x].price)))
-            btn1 = Button(text="Buy") # result of Button function assigned to btn1.
-            btn1.bind(on_press = partial(TransactionHandler.IsTransactionPossible, x)) # IsTransactionPossible is being delegated with a given parameter to the on_press event of btn1.
+            Inventory.drinks[x].label = Label(text=Inventory.as_currency(Inventory.drinks[x].price))
+            self.add_widget(Inventory.drinks[x].label)
+            btn1 = Button(text="Buy")  # result of Button function assigned to btn1.
+            btn1.bind(on_press=partial(TransactionHandler.IsTransactionPossible, x))
+            # IsTransactionPossible is being delegated with a given parameter to the on_press event of btn1.
             self.add_widget(btn1)
             self.add_widget(Label(text=Inventory.drinks[x].description))
 
@@ -51,7 +57,10 @@ class BaseGUI(GridLayout):
 
         self.add_widget(walletLabel)
         self.add_widget(brokeLabel)
-
+        btn2 = Button(text="Change currency")
+        print(callable(Inventory.currency_change))
+        btn2.bind(on_press=partial(Inventory.currency_change))
+        self.add_widget(btn2)
 
         # creates vertical scroll bar widget
         root = ScrollView(size_hint=(1, 1), size=(Window.width, Window.height))
@@ -62,11 +71,12 @@ class BaseGUI(GridLayout):
 class MyApp(App):
 
     def build(self):
-        return BaseGUI() # Build according to the BaseGUI.
+        return BaseGUI()  # Build according to the BaseGUI.
 
 
 def DisplayGUI():
     if __name__ == '__main__':
         MyApp().run()
+
 
 DisplayGUI()
