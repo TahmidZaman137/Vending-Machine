@@ -7,6 +7,7 @@
 import GUI
 import TransactionHandler
 
+
 class Item:
     def __init__(self, name, price, description):
         path_to_images = r"C:\Users\tahmi\OneDrive\Documents\Git\Vending-Machine\Images\\"
@@ -37,25 +38,26 @@ currencies = ["£", "$", "Y"]
 
 currentCurrencyIndex = 0
 
+
 def as_currency(amount):
     global currentCurrencyIndex
     if amount >= 0:
         currency_format = currencies[currentCurrencyIndex] + '{:,.2f}'
         if currentCurrencyIndex == 1:
-            new_amount = amount*1.41
-            return currency_format.format(new_amount)
+            newAmount = amount*1.41
+            return currency_format.format(newAmount)
         if currentCurrencyIndex == 2:
-            new_amount = amount*148.96
-            return currency_format.format(new_amount)
+            newAmount = amount*148.96
+            return currency_format.format(newAmount)
         return currency_format.format(amount)
     elif amount < 0:
         currency_format = "-" + currencies[currentCurrencyIndex] + '{:,.2f}'
         if currentCurrencyIndex == 1:
-            new_amount = amount * 1.41
-            return currency_format.format(new_amount)
+            newAmount = amount * 1.41
+            return currency_format.format(newAmount)
         if currentCurrencyIndex == 2:
-            new_amount = amount*148.96
-            return currency_format.format(new_amount)
+            newAmount = amount*148.96
+            return currency_format.format(newAmount)
         return currency_format.format(amount)
 
 

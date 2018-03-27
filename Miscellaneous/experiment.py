@@ -11,5 +11,6 @@ def tahmid(*args):
         total += a
     return total
 
-print(tahmid(1, , "string"))
+
+print(tahmid(1, "string"))
 print(tahmid(10, 20, 30, 50))
