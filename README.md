@@ -11,7 +11,7 @@
 <p>This project uses semantic versioning to distinguish between commits. An explanation of this can be found at: <a href="https://semver.org/">https://semver.org/</a></p>
 <hr>
 <h2 id="roadmap">Roadmap</h2>
-<p>Roadmap is subject to change. (last reviewed 21/03/2018).</p>
+<p>Roadmap is subject to change. (last reviewed 27/03/2018).</p>
 
 <table>
 <thead>
@@ -21,6 +21,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1.0</td>
+<td>Technical review, validation and stabilisation.</td>
+</tr>
 <tr>
 <td>0.7</td>
 <td>Visual styling for GUI to better resemble a vending machine.</td>
