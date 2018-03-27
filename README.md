@@ -22,12 +22,12 @@
 </thead>
 <tbody>
 <tr>
-<td>1.0</td>
-<td>Technical review, validation and stabilisation.</td>
-</tr>
-<tr>
 <td>0.7</td>
 <td>Visual styling for GUI to better resemble a vending machine.</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>Technical review, validation and stabilisation.</td>
 </tr>
 </tbody>
 </table><hr>
