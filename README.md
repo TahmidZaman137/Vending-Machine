@@ -15,9 +15,10 @@ This project uses semantic versioning to distinguish between commits. An explana
 ## Roadmap
 
 Roadmap is subject to change. (last reviewed 01/04/2018).
+
 | Version |	Defining Feature  |
 |--|--|
-| 1.1| Miscellaneous improvements to GUI and standalone executable support (via pyinstaller). |
+| 1.1 | Miscellaneous changes to GUI and standalone executable support. |
 
 
 
