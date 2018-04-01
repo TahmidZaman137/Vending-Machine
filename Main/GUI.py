@@ -49,7 +49,7 @@ class BaseGUI(GridLayout):
             self.add_widget(btn1)
             self.add_widget(Label(text=Inventory.drinks[x].description))
 
-        walletLabel = Label(text=Inventory.as_currency(TransactionHandler.userWallet))
+        walletLabel = Label(text="Wallet:\n" + Inventory.as_currency(TransactionHandler.userWallet))
         TransactionHandler.walletLabelReference = walletLabel
 
         brokeLabel = Label(text="", markup=True)
@@ -58,7 +58,6 @@ class BaseGUI(GridLayout):
         self.add_widget(walletLabel)
         self.add_widget(brokeLabel)
         btn2 = Button(text="Change currency")
-        print(callable(Inventory.currency_change))
         btn2.bind(on_press=partial(Inventory.currency_change))
         self.add_widget(btn2)
 

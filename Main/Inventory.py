@@ -34,31 +34,21 @@ monster = Item("Monster", 0.10, monster_desc)
 
 drinks = [coke, pepsi, fanta, drpepper, redbull, monster]
 
-currencies = ["£", "$", "Y"]
+currencies = ["£", "$", "¥"]
 
 currentCurrencyIndex = 0
 
 
 def as_currency(amount):
     global currentCurrencyIndex
-    if amount >= 0:
-        currency_format = currencies[currentCurrencyIndex] + '{:,.2f}'
-        if currentCurrencyIndex == 1:
-            newAmount = amount*1.41
-            return currency_format.format(newAmount)
-        if currentCurrencyIndex == 2:
-            newAmount = amount*148.96
-            return currency_format.format(newAmount)
-        return currency_format.format(amount)
-    elif amount < 0:
-        currency_format = "-" + currencies[currentCurrencyIndex] + '{:,.2f}'
-        if currentCurrencyIndex == 1:
-            newAmount = amount * 1.41
-            return currency_format.format(newAmount)
-        if currentCurrencyIndex == 2:
-            newAmount = amount*148.96
-            return currency_format.format(newAmount)
-        return currency_format.format(amount)
+    currency_format = currencies[currentCurrencyIndex] + '{:,.2f}'
+    if currentCurrencyIndex == 1:
+        newAmount = amount*1.41
+        return currency_format.format(newAmount)
+    if currentCurrencyIndex == 2:
+        newAmount = amount*148.96
+        return currency_format.format(newAmount)
+    return currency_format.format(amount)
 
 
 def currency_change(buttonInstance):
@@ -69,8 +59,4 @@ def currency_change(buttonInstance):
 
     for x in range(0, len(drinks)):
         drinks[x].label.text = as_currency(drinks[x].price)
-    TransactionHandler.walletLabelReference.text = as_currency(TransactionHandler.userWallet)
-
-
-
-
+    TransactionHandler.walletLabelReference.text = "Wallet:\n" + as_currency(TransactionHandler.userWallet)

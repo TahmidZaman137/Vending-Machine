@@ -1,21 +1,23 @@
 <BaseGUI>:
     canvas.before:
-        Color:
-            rgba: 0.5, 0.5, 0.5, 1
         Rectangle:
             pos: self.pos
             size: self.size
-
-<Button>:
-    font_size: dp(50)
+            source: "vmbg.jpg"
 
 <Label>:
+    bold: True
+    font_size: dp(21)
     text_size: self.size
     halign: 'center'
     valign: 'center'
+    color: 1, 0, 0, 1
 
+<Button>:
+    font_size: dp(50)
+    italic: True
+    background_color: 0.5, 0.5, 0.5, 0.8
+    color: 1, 1, 1, 1
 
-
-
-
-
+<Image>:
+    color: 1, 1, 1, 0.8

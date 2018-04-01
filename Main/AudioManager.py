@@ -5,5 +5,6 @@
 # ===============================================================================
 
 from kivy.core.audio import SoundLoader
-successNoise = SoundLoader.load('chaching.wav')
-failureNoise = SoundLoader.load('breaking.wav')
+soundPath = r"C:\Users\tahmi\OneDrive\Documents\Git\Vending-Machine\Sounds\\"
+successNoise = SoundLoader.load(soundPath + 'chaching.wav')
+failureNoise = SoundLoader.load(soundPath + 'breaking.wav')

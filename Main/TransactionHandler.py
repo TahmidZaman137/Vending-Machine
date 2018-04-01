@@ -15,7 +15,7 @@ userWallet = 10.0
 def MakeTransaction(inventoryIndex):
     global userWallet, walletLabelReference
     userWallet = userWallet - Inventory.drinks[inventoryIndex].price
-    walletLabelReference.text = Inventory.as_currency(userWallet)
+    walletLabelReference.text = "Wallet:\n" + Inventory.as_currency(userWallet)
     return userWallet
 
 
@@ -29,6 +29,3 @@ def IsTransactionPossible(inventoryIndex, buttonInstance):
     else:
         brokeLabelReference.text = "[color=ed1010][size=50]You broke AF[/color][/size]"
         AudioManager.failureNoise.play()
-
-
-
